@@ -45,7 +45,7 @@ namespace OficinaAutomacao
             IWebElement btnSubmit = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("//*[@id=\"submit-btn\"]")));
             js.ExecuteScript("arguments[0].scrollIntoView({ block: 'center' });", btnSubmit);
             Thread.Sleep(500);
-            btnSubmit.Click();
+            btnSubmit.Click();            
 
             #endregion Navigation to Form Fields
             Console.ReadKey();
